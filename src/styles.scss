@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "moon";
+    src: url("assets/fonts/moon-font-cufonfonts/moon_font.TTF") format(".TTF")
+}
+
+@font-face {
+    font-family: "kitten";
+    src: url("assets/fonts/kitten-cufonfonts/KittenBoldTrial.ttf") format(".TTF"), url("assets/fonts/kitten-cufonfonts/KittenFatTrial.ttf") format(".TTF"), url("assets/fonts/kitten-cufonfonts/KittenSlantTrial.ttf") format(".TTF"), url("assets/fonts/kitten-cufonfonts/KittenSwashMonolineTrial.ttf") format(".TTF"), url("assets/fonts/kitten-cufonfonts/KittenSwashTrial.ttf") format(".TTF")
+}
+
+// @font-face {
+//     font-family: "littlecats";
+//     src: url("assets/fonts/kitten-cufonfonts/");
+// }

@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=01 Normal Select V1.ani
+
+[Wait]
+Path=04 Busy V1.ani
+
+[Crosshair]
+Path=05 Precision Select V1.cur
+
+[Hand]
+Path=15 Link Select V1.ani
+
+[NWPen]
+Path=07 Handwriting V1.cur
+
+[No]
+Path=08 Unavailable.cur
+
+[SizeNS]
+Path=09 Vertical Resize V2.ani
+
+[SizeWE]
+Path=10 Horizontal Resize V2.ani
+
+[SizeNWSE]
+Path=11 Diagonal Resize 1.ani
+
+[SizeNESW]
+Path=12 Diagonal Resize 2.ani
+
+[SizeAll]
+Path=13 Move.ani
+
+[UpArrow]
+Path=14 Alternate-Left Select.ani
+
+[Pin]
+Path=16 Location Select.ani
+
+[Person]
+Path=17 Person Select.ani
+
+[IBeam]
+Path=06 Text Select.ani
+
