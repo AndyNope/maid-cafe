@@ -1,6 +1,25 @@
-/* Please ❤ this if you like it! */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+$color-3: #E9F1DF;
+$color-3-t: transparentize($color-3, 1);
+$color-4: lightblue;
+$color-4-t: transparentize($color-4, 1);
+$size: 2.8em;
+$size-half: $size/2;
+$begin: $size/9.53;
+$step: $size/18;
+$space: $size/8.4;
+$step-s: $step/1.5;
+$step-b: $space;
+$step-e: $space+$step;
+$step-b-2: $space*2+$step;
+$step-e-2: $space*2+$step*2;
+$step-b-3: $space*3+$step*2;
+$step-e-3: $space*3+$step*3;
+$small-b: ($space*3 + $step)/2;
+$small-e: $small-b+$step;
+$small-b-2: $small-b+$step+$space;
+$small-e-2: $small-b+$step*2+$space;
+$small-c: $size+$space - $step/1.9;
+$bgcolor: $color-4;
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -94,9 +113,13 @@ h1 {
     z-index: 9;
     overflow: hidden;
     box-shadow: 0 8px 30px 0 rgba(120, 53, 245, 0.3);
-    background-color: #4457e4;
+    background-color: $bgcolor;
+    background: radial-gradient(circle at right, $color-3-t $step-b, $color-3 $step-b, $color-3 $step-e, $color-3-t $step-e, $color-3-t $step-b-2, $color-3 $step-b-2, $color-3 $step-e-2, $color-3-t $step-e-2, $color-3-t $step-b-3, $color-3 $step-b-3, $color-3 $step-e-3, $color-3-t $step-e-3) 0 0, radial-gradient(circle at left, $color-3-t $small-b, $color-3 $small-b, $color-3 $small-e, $color-3-t $small-e, $color-3-t $small-b-2, $color-3 $small-b-2, $color-3 $small-e-2, $color-3-t $small-e-2) 0 $small-c, linear-gradient(to right top, $color-3 $step, $color-3-t $step) $small-e-2 $step, linear-gradient(to left top, $color-3 $step, $color-3-t $step) $small-e-2 $step, linear-gradient(to right bottom, $color-3 $step, $color-3-t $step) $small-e-2 $step, linear-gradient(to left bottom, $color-3 $step, $color-3-t $step) $small-e-2 $step;
+    background-size: $size $size;
+    background-color: $bgcolor;
     animation: border-transform 7s linear infinite;
-    transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    // transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1, 0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1, 0.23, 1, 0.32, 1), transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1, 0.23, 1, 0.32, 1), height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1, 0.23, 1, 0.32, 1);
 }
 
 @keyframes border-transform {
@@ -126,6 +149,7 @@ h1 {
 
 .menu-icon:checked~.nav {
     animation-play-state: paused;
+    box-shadow: $bgcolor 65px -15px 0 -5px, $bgcolor 25px -25px, $bgcolor 30px 10px, $bgcolor 60px 15px 0 -10px, $bgcolor 85px 5px 0 -5px;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
@@ -240,15 +264,15 @@ h1 {
 
 .logo {
     position: absolute;
-    top: 60px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
     display: block;
     z-index: 11;
     transition: all 250ms linear;
 }
 
 .logo img {
-    height: 26px;
+    height: 80px;
     width: auto;
     display: block;
 }
