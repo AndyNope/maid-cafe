@@ -1,3 +1,8 @@
 * {
     font-family: 'Fredoka One', cursive;
 }
+
+.scroll-box {
+    background: linear-gradient(-45deg, white 50%, transparent 50%) 1px 0, linear-gradient(45deg, transparent 50%, #67e8f9 50%), linear-gradient(135deg, white 50%, transparent 50%) 16px 0, linear-gradient(-135deg, transparent 50%, #67e8f9 50%), white;
+    background-size: 18px 54px;
+}
