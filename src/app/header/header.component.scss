@@ -28,8 +28,24 @@
     left: calc(50% + 100px);
 }
 
+.fadein {
+    animation: fadein 4s, move 6s ease infinite;
+}
+
 @keyframes move {
     50% {
         transform: translateY(-15px);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

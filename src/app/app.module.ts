@@ -5,18 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HeaderComponent } from './header/header.component';
+import { SugarBombComponent } from './sugar-bomb/sugar-bomb.component';
+import { SugarbombService } from './shared/sugarbomb.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    HeaderComponent
+    HeaderComponent,
+    SugarBombComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SugarbombService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

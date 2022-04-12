@@ -1,0 +1,5 @@
+<div class="protection-screen" [ngClass]="{'hide-screen': !sugarbombService.showSugarBomb}">
+    <div class="cloud" (click)="toggleSugarBomb()" [ngClass]="{'hide-cloud': !sugarbombService.showSugarBomb}">
+        <p>click me</p>
+    </div>
+</div>
