@@ -25,4 +25,8 @@ $bg-secondary) {
 body {
     @include pattern(#c0ebfa,
     #ffc0cb);
+    background-image: url('./assets/img/sakura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
