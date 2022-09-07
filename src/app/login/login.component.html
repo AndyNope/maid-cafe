@@ -4,7 +4,7 @@
         <form [formGroup]="reactiveForm" class="flex-column-centered">
             <input type="text" formControlName="username" name="user" id="user" placeholder="Username" required>
             <input type="password" formControlName="password" name="password" id="password" placeholder="Password" required>
-            <button [disabled]="reactiveForm.invalid" value="Login">Login</button>
+            <button [disabled]="reactiveForm.invalid" (click)="submit()" value="Login">Login</button>
         </form>
         <a href="#">
             <p class="text-center">Forgot Password?</p>
