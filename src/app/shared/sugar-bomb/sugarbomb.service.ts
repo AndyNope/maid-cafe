@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SugarbombService {
   public showSugarBomb = true;
+  public visited = false;
 
   constructor() { }
 }

@@ -29,4 +29,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    // min-height: 100vh;
+}
+
+@media (orientation:landscape) {
+    body {
+        background-size: 100% 100%;
+    }
 }

@@ -1,0 +1,19 @@
+<!-- <a href="/" class="logo fixed" target="_blank">
+    <img src="../../assets/img/maid-cafe_crop.jpg" alt="">
+</a> -->
+
+<form [formGroup]="form">
+    <input class="menu-icon" formControlName="navButton" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon">
+    </label>
+    <nav class="nav">
+        <ul class="pt-5">
+            <li routerLinkActive="active" (click)="navigateTo('/de/home');"><a (click)="test()"> Home </a></li>
+            <li routerLinkActive="active" (click)="navigateTo('/de/menu');"><a (click)="test()">Menu</a></li>
+            <li><a routerLinkActive="active" (click)="navigateTo('/de/about-us');" (click)="test()">About us</a></li>
+            <li><a routerLinkActive="active" (click)="navigateTo('/de/login');" routerLink="/de/login">Login</a>
+            </li>
+            <li><a href="https://linktr.ee/maidcafedreamgarden" target="_blank">Linktree</a></li>
+        </ul>
+    </nav>
+</form>

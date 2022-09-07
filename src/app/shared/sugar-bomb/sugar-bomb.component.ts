@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { SugarbombService } from '../shared/sugarbomb.service';
+import { SugarbombService } from './sugarbomb.service';
 
 declare function onStart(): any;
 
@@ -10,7 +10,6 @@ declare function onStart(): any;
 })
 export class SugarBombComponent implements OnInit, AfterViewInit {
 
-
   constructor(public sugarbombService: SugarbombService) { }
 
   ngAfterViewInit(): void {
@@ -18,6 +17,12 @@ export class SugarBombComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    if (sessionStorage.getItem('sugarbomb') === null) {
+      sessionStorage.setItem('sugarbomb', 'true');
+    } else {
+      this.toggleSugarBomb();
+      this.sugarbombService.visited = true
+    }
   }
 
   toggleSugarBomb(): void {

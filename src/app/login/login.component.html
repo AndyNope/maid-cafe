@@ -1,0 +1,13 @@
+<div class="login-div flex-column-centered">
+    <div class="login-comps">
+        <h1 class="text-center">Login</h1>
+        <form [formGroup]="reactiveForm" class="flex-column-centered">
+            <input type="text" formControlName="username" name="user" id="user" placeholder="Username" required>
+            <input type="password" formControlName="password" name="password" id="password" placeholder="Password" required>
+            <button [disabled]="reactiveForm.invalid" value="Login">Login</button>
+        </form>
+        <a href="#">
+            <p class="text-center">Forgot Password?</p>
+        </a>
+    </div>
+</div>

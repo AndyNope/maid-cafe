@@ -1,3 +1,16 @@
 * {
     font-family: 'Fredoka One', cursive;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: calc(100vh - 224px);
+}
+
+.content {
+    padding: 10px;
+    background-color: #ffffff90;
+    border-radius: 5px;
+    margin: 10px;
+}
